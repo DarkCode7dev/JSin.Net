@@ -1,0 +1,33 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+
+</head>
+<body>
+    <div> 
+        <h1>Hello from index</h1><br />
+        <input type="text" id="txtBox"/>
+        <br />
+        <label id="lbl"></label><br />
+
+        <input type="button" onclick="BtnClick()" value="Click me"/>
+    </div>
+</body>
+</html>
+<script>
+
+    function BtnClick() {
+        var value = $("#txtBox").val();
+        $("#lbl").text(value);
+    }
+ 
+</script>
