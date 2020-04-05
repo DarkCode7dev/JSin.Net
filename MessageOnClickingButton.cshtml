@@ -1,0 +1,30 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+
+</head>
+<body>
+    <div> 
+        <h1>Hello from index</h1>
+        <label id="lbl"></label>
+
+        <input type="button" onclick="BtnClick()" value="Click me"/>
+    </div>
+</body>
+</html>
+<script>
+
+    function BtnClick() {
+        $("#lbl").text("I am added from jquery");
+    }
+ 
+</script>
